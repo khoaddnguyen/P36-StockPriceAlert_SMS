@@ -56,7 +56,7 @@ print(diff_percent)
 # 5. - If diff_percentage is greater than 5 then fetch 3 news pieces from the news endpoint.
 # 6. - Use the News API to get articles related to the COMPANY_NAME.
 
-if abs(diff_percent) > 1:
+if abs(diff_percent) > 5:
     news_params = {
         "apiKey": NEWS_API_KEY,
         "q": COMPANY_NAME
